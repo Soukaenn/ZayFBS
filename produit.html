@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZayFBS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span>ZayFBS</span>
+
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Fermes</a></li>
+                <li><a href="">Processus</a></li>
+                <li><a href="">Certifications</a></li>
+                <li><a href="">Produit</a></li>
+            </ul>
+            <button>
+                <img src="img/icons panier.png" alt="Panier">
+            </button>
+        </nav>
+    </header>
+<main class="products-page">
+    <section class="products-header">
+        <h1>Nos Huiles d’Exception</h1>
+        <button class="btn-add" id="openModal"><span>+</span> Ajouter un Produit</button>
+        <p class="subtitle">L'authenticité de Fquih Ben Saleh en bouteille.</p>
+    </section>
+
+    <div class="products-grid">
+        <article class="product-card">
+            <span class="badge">Meilleur Prix</span>
+            <img src="img/extra vierge.png" alt="Huile d'Olive Extra Vierge 1L">
+            <h3>Huile d’Olive Extra Vierge - 1L</h3>
+            <h4>L'Équilibre Quotidien</h4>
+            <p>Une huile de première pression à froid, extraite des meilleures olives de Fquih Ben Saleh. Avec son goût équilibré et ses notes fruitées.</p>
+            <div class="price">85DH</div>
+            <button class="btn-cart">Ajouter Au Panier</button>
+        </article>
+
+        <article class="product-card">
+            <img src="img/bio certifies.jpg" alt="Huile d'Olive BIO 1L">
+            <h3>Huile d’Olive BIO Certifiée - 1L</h3>
+            <h4>La Pureté Naturelle</h4>
+            <p>Issue d'une agriculture respectueuse de l'environnement, cette huile Bio est garantie sans aucun additif chimique. Un goût intense.</p>
+            <div class="price">110DH</div>
+            <button class="btn-cart">Ajouter Au Panier</button>
+        </article>
+
+        </div>
+</main>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <h2>DÉTAILS DU PRODUIT</h2>
+        <h3>CRÉER OU MODIFIER</h3>
+        
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Nom du Produit</label>
+                <input type="text" id="productName" placeholder="Huile d’olive extra">
+            </div>
+
+            <div class="form-group">
+                <label>APERÇU DE L’IMAGE</label>
+                <div class="image-upload">
+                    <input type="file" id="imageInput" hidden>
+                    <label for="imageInput" class="upload-label">
+                        <span>+</span>
+                        <p>Cliquez pour uploader une image</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="productPrice">Prix</label>
+                <div class="price-input">
+                    <input type="number" id="productPrice">
+                    <span>DH</span>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button type="button" class="btn-cancel" id="closeModal">ANNULER</button>
+                <button type="submit" class="btn-confirm">CONFIRMER</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
