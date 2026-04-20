@@ -1,147 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZayFBS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZayFBS — Accueil</title>
+  <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-            <span>ZayFBS</span>
 
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Fermes</a></li>
-                <li><a href="">Processus</a></li>
-                <li><a href="">Certifications</a></li>
-                <li><a href="">Produit</a></li>
-            </ul>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">🫒 ZayFBS</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Accueil</a></li>
+      <li><a href="#">Nos Produits</a></li>
+      <li><a href="#">Contactez-nous</a></li>
+    </ul>
+    <button class="nav-cart">🛒 Panier <span>(0)</span></button>
+  </nav>
 
-            <button>
-                <img src="img/icons panier.png" alt="Panier">
-            </button>
-        </nav>
-    </header>
+  <!-- HERO -->
+  <header class="hero">
+    <img src="img/image hero.jpg" class="hero-img">
+    <div class="hero-overlay">
+      <h1>L’Or Vert de Fquih Ben Saleh</h1>
+      <p>Huile d’olive extra vierge – Terroirs du Moyen Atlas</p>
+      <button class="hero-btn">Acheter maintenant</button>
+    </div>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="Hero">
-        <h2>L'Or Vert de Fquih Ben Saleh</h2>
+  <!-- FERMES PARTENAIRES -->
+  <section class="fermes">
+    <h2>Nos Fermes Partenaires</h2>
 
-        <p>
-            Découvrez une huile d'olive extra vierge, pressée à froid et issue d'un savoir-faire
-            ancestral. Le goût authentique du terroir marocain, directement de nos fermes
-            à votre table.
-        </p>
+    <div class="fermes-grid">
 
-        <img src="img/image hero.jpg" alt="Image Hero">
+      <div class="ferme-card">
+        <img src="img/ferme oulad hatten.jpg" alt="">
+        <h3>Ferme Oulad Hatten</h3>
+        <p>150 oliviers centenaires, récolte manuelle.</p>
+        <span class="tag">Picholine</span>
+      </div>
 
-        <button class="btn">Acheter Maintenant</button>
-    </section>
+      <div class="ferme-card">
+        <img src="img/ferme 2.jpg" alt="">
+        <h3>Ferme Aït Youssef</h3>
+        <p>Agriculture biologique certifiée.</p>
+        <span class="tag">Bio</span>
+      </div>
 
-    <!-- FERMES -->
-<section id="fermes-section" class="fermes">
-        <h3>Nos Fermes</h3>
-
-        <div class="fermes-container">
-            <article class="ferme-card">
-                <img src="img/ferme oulad hatten.jpg" alt="Ferme 1">
-                <h4>Ferme Al-Atlas</h4>
-                <span class="location">Fquih Ben Salah</span>
-            </article>
-
-            <article class="ferme-card">
-                <img src="img/ferme 2.jpg" alt="Ferme 2">
-                <h4>Ferme Al-Boustane</h4> <span class="location">Fquih Ben Salah</span>
-            </article>
-
-            <article class="ferme-card">
-                <img src="img/ferme 3.jpg" alt="Ferme 3">
-                <h4>Oasis des Olives</h4>
-                <span class="location">Fquih Ben Salah</span>
-            </article>
-        </div>
-    </section>
-
-    <section id="cert-section" class="certifications">
-        <h3>Certifications</h3>
-        <div class="cert-container">
-            <img src="img/bio.jpg" alt="Certification Bio">
-            <img src="img/extra vierge.png" alt="Certification Extra Vierge">
-            <img src="img/onssa.png" alt="Certification Onssa">
-        </div>
-    </section>
+      <div class="ferme-card">
+        <img src="img/ferme 3.jpg" alt="">
+        <h3>Ferme Dar Zitoun</h3>
+        <p>Altitude 600 m, terroir exceptionnel.</p>
+        <span class="tag">Premium</span>
+      </div>
 
     </div>
-   <section id="processus-section" class="processus">
-    <h3>Notre Processus de Production</h3>
-    
-    <div class="process-container">
-        <div class="process-step">
-            <div class="step-icon">
-                <img src="img/1.jpg" alt="Récolte des olives">
-            </div>
-            <h4>Récolte</h4>
-            <p>Cueillies à la main avec soin.</p>
-        </div>
+  </section>
 
-        <div class="process-step">
-            <div class="step-icon">
-                <img src="img/2.jpg" alt="Lavage des olives">
-            </div>
-            <h4>Lavage</h4>
-            <p>Nettoyage des impuretés.</p>
-        </div>
+  <!-- CERTIFICATIONS -->
+  <section class="certifications">
+    <h2>Certifications</h2>
 
-        <div class="process-step">
-            <div class="step-icon">
-                <img src="img/3.jpg" alt="Extraction d'huile">
-            </div>
-            <h4>Extraction</h4>
-            <p>Pressage mécanique à froid.</p>
-        </div>
-
-        <div class="process-step">
-            <div class="step-icon">
-                <img src="img/4.jpg" alt="Mise en bouteille">
-            </div>
-            <h4>Conditionnement</h4>
-            <p>Mise en bouteille protective.</p>
-        </div>
+    <div class="certs-grid">
+      <img src="img/bio.jpg" alt="">
+      <img src="img/extra vierge.png" alt="">
+      <img src="img/onssa.png" alt="">
     </div>
-</section>
-<footer class="main-footer">
-        <div class="footer-container">
-            
-            <div class="footer-section branding">
-                <span class="footer-logo">ZayFBS</span>
-                <p>Le Meilleur de l’olive, de nos Fermes à votre table.</p>
-            </div>
+  </section>
 
-            <div class="footer-section links">
-                <h4>Liens Rapides</h4>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="produits.html">Boutique</a></li>
-                    <li><a href="#propos">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+  <!-- PROCESSUS -->
+  <section class="processus">
+    <h2>Processus</h2>
 
-            <div class="footer-section contact-info">
-                <h4>Contact</h4>
-                <p><strong>Téléphone:</strong> +212 600 000 000</p>
-                <p><strong>Email:</strong> Contact@zayfbs.ma</p>
-                <p><strong>Adresse:</strong> Fquih Ben Salah, Maroc</p>
-            </div>
-        </div>
+    <div class="process-grid">
 
-        <div class="footer-bottom">
-            <p>ZayFBS. Conçu par <strong>Soukaina</strong> &copy; 2026</p>
-        </div>
-    </footer>
+      <div class="step">
+        <img src="img/1.jpg" alt="">
+        <h4>Récolte</h4>
+        <p>Cueillette à la main.</p>
+      </div>
+
+      <div class="step">
+        <img src="img/2.jpg" alt="">
+        <h4>Lavage</h4>
+        <p>Nettoyage des olives.</p>
+      </div>
+
+      <div class="step">
+        <img src="img/3.jpg" alt="">
+        <h4>Extraction</h4>
+        <p>Pressage mécanique.</p>
+      </div>
+
+      <div class="step">
+        <img src="img/4.jpg" alt="">
+        <h4>Conditionnement</h4>
+        <p>Mise en bouteille.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+
+      <div>
+        <h3 class="footer-logo">🫒 ZayFBS</h3>
+        <p>Producteur d’huile d’olive extra vierge.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Navigation</p>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div>
+        <p class="footer-title">Liens utiles</p>
+        <a href="#">Certifications</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>📍 Fquih Ben Saleh</p>
+        <p>📞 +212 6 XX XX XX XX</p>
+        <p>✉️ contact@zayfbs.ma</p>
+      </div>
+
+    </div>
+
+    <p class="footer-copy">© 2025 ZayFBS — Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
